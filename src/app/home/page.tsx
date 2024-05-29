@@ -16,11 +16,11 @@ import DemoAppIconButton from '../dev/components/DemoAppIconButton';
 import DemoAppImage from '../dev/components/DemoAppImage';
 
 // ** Constants imports
-import { _DESCRIPTION_, _TITLE_ } from '@/Constants';
+import { APP_DESCRIPTION, APP_TITLE } from '@/constants';
 
 export const metadata: Metadata = {
-  title: _TITLE_,
-  description: _DESCRIPTION_,
+  title: APP_TITLE,
+  description: APP_DESCRIPTION,
 };
 
 /**

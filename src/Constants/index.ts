@@ -1,7 +1,13 @@
+import { APP_TITLE, APP_DESCRIPTION, APPAPP_TITLEPUBLIC } from './meta';
+import { SIDE_BAR_ITEMS,SIDE_BAR_ITEMS_PUBLIC,BOTTOM_BAR_ITEMS } from './navigation';
 
-// ** Project Title
-export const _TITLE_ = 'Chat Application';
-export const _TITLE_PUBLIC_ = 'Chat Application';
 
-// ** Project Description
-export const _DESCRIPTION_ = 'Chat Application Description...';
+
+export {
+    APP_TITLE,
+    APP_DESCRIPTION,
+    APPAPP_TITLEPUBLIC,
+    SIDE_BAR_ITEMS,
+    SIDE_BAR_ITEMS_PUBLIC,
+    BOTTOM_BAR_ITEMS
+};
