@@ -28,7 +28,9 @@ import {
   Accessible,
   AccessibleForward,
   AccountBalance,
-  AccountBalanceWallet
+  AccountBalanceWallet,
+  Nightlife,
+  Brightness7
 } from '@mui/icons-material';
 
 /**
@@ -54,7 +56,7 @@ export const ICONS /* Note: Setting type disables property autocomplete :( was -
   visibilityoff: VisibilityOff,
   daynight: Brightness4,
   night: Brightness3,
-  day: Brightness5,
+  day: Brightness7,
   search: Search,
   info: Info,
   home: Home,
@@ -75,6 +77,7 @@ export const ICONS /* Note: Setting type disables property autocomplete :( was -
   brightness3: Brightness3,
   brightness4: Brightness4,
   brightness5: Brightness5,
+  nightlife: Nightlife
 
   // Continue to add more icons as needed
 };

@@ -28,7 +28,7 @@ interface Props extends StackProps {
  */
 const TopBarAndSideBarLayout: FunctionComponent<Props> = ({ children, sidebarItems, title, variant }) => {
   const [state] = useAppStore();
-  const [sidebarVisible, setSidebarVisible] = useState(false); // TODO: Verify is default value is correct
+  const [sidebarVisible, setSidebarVisible] = useState(false);
   const onMobile = useIsMobile();
   const onSwitchDarkMode = useEventSwitchDarkMode();
 
@@ -68,42 +68,33 @@ const TopBarAndSideBarLayout: FunctionComponent<Props> = ({ children, sidebarIte
   );
 
   const onSideBarOpen = () => {
-    if (!sidebarVisible) setSidebarVisible(true); // Don't re-render Layout when SideBar is already open
+    if (!sidebarVisible) setSidebarVisible(true);
   };
 
   const onSideBarClose = () => {
-    if (sidebarVisible) setSidebarVisible(false); // Don't re-render Layout when SideBar is already closed
+    if (sidebarVisible) setSidebarVisible(false);
   };
 
   const LogoButton = (
     <AppIconButton
-      icon="logo"
+      icon="menu"
       title={sidebarProps.open ? undefined : 'Open Sidebar'}
-      to={sidebarProps.open ? '/' : undefined} // Navigate to Home only when SideBar is closed
-      onClick={sidebarProps.open ? undefined : onSideBarOpen} // Open SideBar only when it's closed
+      to={sidebarProps.open ? '/' : undefined}
+      onClick={sidebarProps.open ? undefined : onSideBarOpen}
     />
   );
 
   const DarkModeButton = (
     <AppIconButton
-      icon={state.darkMode ? 'day' : 'night'} // Variant 1
-      // icon="daynight" // Variant 2
-      title={state.darkMode ? 'Switch to Light mode' : 'Switch to Dark mode'}
+      icon={state.darkMode ? 'day' : 'night'}
+      title={state.darkMode ? 'Light mode' : 'Dark mode'}
       onClick={onSwitchDarkMode}
     />
   );
 
-  // Note: useMemo() is not needed for startNode, endNode. We need respect store.darkMode and so on.
   const { startNode, endNode } = sidebarProps?.anchor?.includes('left')
     ? { startNode: LogoButton, endNode: DarkModeButton }
     : { startNode: DarkModeButton, endNode: LogoButton };
-
-  IS_DEBUG &&
-    console.log('Render <TopbarAndSidebarLayout/>', {
-      onMobile,
-      darkMode: state.darkMode,
-      sidebarProps,
-    });
 
   return (
     <Stack sx={stackStyles}>
@@ -114,8 +105,8 @@ const TopBarAndSideBarLayout: FunctionComponent<Props> = ({ children, sidebarIte
 
       <Stack
         component="main"
-        flexGrow={1} // Takes all possible space
-        justifyContent="space-between" // Push children content (Footer, StatusBar, etc.) to the bottom
+        flexGrow={1}
+        justifyContent="space-between"
         paddingLeft={1}
         paddingRight={1}
         paddingTop={1}

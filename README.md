@@ -11,7 +11,7 @@ _Warning_: if _you_ are planning* to use **Pages Router** (not **App Router**) t
 
 1. Clone or download the repo from: https://github.com/karpolan/nextjs-mui-starter-ts
 2. Copy `.env.sample` file into `.env` file
-3. Replace `_TITLE_` and `_DESCRIPTION_` in all files with their own texts
+3. Replace `APP_TITLE` and `APP_DESCRIPTION` in all files with their own texts
 4. Check and resolve all `// TODO: ` directives
 5. Add your code :)
 
