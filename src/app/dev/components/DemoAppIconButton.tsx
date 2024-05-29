@@ -1,7 +1,15 @@
 'use client';
-import { useState } from 'react';
+
+// ** React imports
+import React, { useState } from 'react';
+
+// ** Third-party imports
 import copyToClipboard from 'copy-to-clipboard';
+
+// ** MUI imports
 import { Box, Card, CardContent, CardHeader, Snackbar, Tooltip } from '@mui/material';
+
+// ** Components imports
 import AppIconButton, { AppIconButtonProps } from '@/components/common/AppIconButton/AppIconButton';
 
 /**

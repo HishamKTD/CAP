@@ -1,24 +1,35 @@
-// SVG assets
+//** SVG assets */
 import PencilIcon from './icons/PencilIcon';
-// MUI Icons
-import DefaultIcon from '@mui/icons-material/MoreHoriz';
-import SettingsIcon from '@mui/icons-material/Settings';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import DayNightIcon from '@mui/icons-material/Brightness4';
-import NightIcon from '@mui/icons-material/Brightness3';
-import DayIcon from '@mui/icons-material/Brightness5';
-import SearchIcon from '@mui/icons-material/Search';
-import InfoIcon from '@mui/icons-material/Info';
-import HomeIcon from '@mui/icons-material/Home';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import PersonIcon from '@mui/icons-material/Person';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import NotificationsIcon from '@mui/icons-material/NotificationsOutlined';
-import DangerousIcon from '@mui/icons-material/Dangerous';
+
+//** MUI Icons */
+import {
+  MoreHoriz,
+  Close,
+  Menu,
+  Settings,
+  Visibility,
+  VisibilityOff,
+  Home,
+  Person,
+  ExitToApp,
+  NotificationsOutlined,
+  Dangerous,
+  AccessAlarm,
+  PersonAdd,
+  Brightness4,
+  Brightness3,
+  Info,
+  Brightness5,
+  Search,
+  AccountCircle,
+  AccessAlarms,
+  Accessibility,
+  AccessibilityNew,
+  Accessible,
+  AccessibleForward,
+  AccountBalance,
+  AccountBalanceWallet
+} from '@mui/icons-material';
 
 /**
  * List of all available Icon names
@@ -34,23 +45,37 @@ export type IconName = keyof typeof ICONS;
  * Note: You can use camelCase or UPPERCASE in the <Icon icon="someIconByName" /> component
  */
 export const ICONS /* Note: Setting type disables property autocomplete :( was - : Record<string, ComponentType> */ = {
-  default: DefaultIcon,
+  default: MoreHoriz,
   logo: PencilIcon,
-  close: CloseIcon,
-  menu: MenuIcon,
-  settings: SettingsIcon,
-  visibilityon: VisibilityIcon,
-  visibilityoff: VisibilityOffIcon,
-  daynight: DayNightIcon,
-  night: NightIcon,
-  day: DayIcon,
-  search: SearchIcon,
-  info: InfoIcon,
-  home: HomeIcon,
+  close: Close,
+  menu: Menu,
+  settings: Settings,
+  visibilityon: Visibility,
+  visibilityoff: VisibilityOff,
+  daynight: Brightness4,
+  night: Brightness3,
+  day: Brightness5,
+  search: Search,
+  info: Info,
+  home: Home,
   account: AccountCircle,
-  signup: PersonAddIcon,
-  login: PersonIcon,
-  logout: ExitToAppIcon,
-  notifications: NotificationsIcon,
-  error: DangerousIcon,
+  signup: PersonAdd,
+  login: Person,
+  logout: ExitToApp,
+  notifications: NotificationsOutlined,
+  error: Dangerous,
+  accessalarm: AccessAlarm,
+  accessalarms: AccessAlarms,
+  accessibility: Accessibility,
+  accessibilitynew: AccessibilityNew,
+  accessible: Accessible,
+  accessibleforward: AccessibleForward,
+  accountbalance: AccountBalance,
+  accountbalancewallet: AccountBalanceWallet,
+  brightness3: Brightness3,
+  brightness4: Brightness4,
+  brightness5: Brightness5,
+
+  // Continue to add more icons as needed
 };
+

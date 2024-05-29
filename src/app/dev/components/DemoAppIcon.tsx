@@ -1,7 +1,15 @@
 'use client';
-import { useState } from 'react';
+
+// ** React imports
+import React,{ useState } from 'react';
+
+// ** Third-party imports
 import copyToClipboard from 'copy-to-clipboard';
+
+// ** MUI imports
 import { Box, Card, CardContent, CardHeader, Snackbar } from '@mui/material';
+
+// ** Components imports
 import { AppIconButton } from '@/components';
 import { ICONS } from '@/components/common/AppIcon/config';
 
@@ -25,7 +33,7 @@ const DemoAppIcon = () => {
               onClick={() => {
                 copyToClipboard(`<AppIcon icon="${icon}" />`);
                 setSnackbarOpen(true); // Show snackbar
-                setTimeout(() => setSnackbarOpen(false), 3000); // Hide snackbar after small delay
+                setTimeout(() => setSnackbarOpen(false), 10000); // Hide snackbar after small delay
               }}
             />
           ))}

@@ -1,5 +1,13 @@
-import { Stack } from '@mui/material';
+// ** React Imports
+import React from 'react';
+
+// ** Next imports
 import { NextPage } from 'next';
+
+// ** Mui Imports
+import { Stack } from '@mui/material';
+
+// ** Components Imports
 import { AppAlert, UserInfo } from '../../components';
 
 /**

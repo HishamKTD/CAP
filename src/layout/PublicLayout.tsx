@@ -6,10 +6,10 @@ import { useIsMobile } from '@/hooks';
 import { BottomBar } from './components';
 import TopBarAndSideBarLayout from './TopBarAndSideBarLayout';
 import { BOTTOM_BAR_DESKTOP_VISIBLE } from './config';
-import { _TITLE_PUBLIC_ } from '@/Constants';
+import { _TITLE_PUBLIC_ } from '@/constants';
 
-// TODO: change to your app name or other word
-const TITLE_PUBLIC = _TITLE_PUBLIC_; // Title for pages without/before authentication
+// TO DO: change to your app name or other word
+const TITLE_PUBLIC = _TITLE_PUBLIC_;
 
 /**
  * SideBar navigation items with links for Public Layout

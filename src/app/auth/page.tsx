@@ -1,3 +1,7 @@
+// ** React imports
+import React from 'react';
+
+// ** Next imports
 import { redirect } from 'next/navigation';
 
 /**
@@ -7,7 +11,7 @@ import { redirect } from 'next/navigation';
  */
 const AuthPage = () => {
   redirect('/auth/login');
-  // return <div>Auth Page</div>;
+  // ** return <div>Auth Page</div>;
 };
 
 export default AuthPage;

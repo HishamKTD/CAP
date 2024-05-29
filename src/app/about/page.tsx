@@ -1,5 +1,13 @@
-import { Stack, Typography } from '@mui/material';
+// ** React Imports
+import React from 'react';
+
+// ** Next Imports
 import { NextPage } from 'next';
+
+// ** Mui imports
+import { Stack, Typography } from '@mui/material';
+
+// ** Components imports
 import { AppLink } from '@/components';
 
 /**
