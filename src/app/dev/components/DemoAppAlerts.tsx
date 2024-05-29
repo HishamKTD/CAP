@@ -1,4 +1,10 @@
+// ** React imports
+import React from 'react';
+
+// ** MUI imports
 import { Card, CardContent, CardHeader } from '@mui/material';
+
+// ** Components imports
 import { AppAlert } from '@/components';
 
 /**

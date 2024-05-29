@@ -1,11 +1,21 @@
+// ** React imports
+import React from 'react';
+
+// ** Next imports
 import { Metadata, NextPage } from 'next';
+
+// ** MUI imports
 import { Stack, Typography } from '@mui/material';
+
+// ** Components imports
 import { AppLink } from '@/components';
 import DemoAppAlert from '../dev/components/DemoAppAlerts';
 import DemoAppButton from '../dev/components/DemoAppButton';
 import DemoAppIcon from '../dev/components/DemoAppIcon';
 import DemoAppIconButton from '../dev/components/DemoAppIconButton';
 import DemoAppImage from '../dev/components/DemoAppImage';
+
+// ** Constants imports
 import { _DESCRIPTION_, _TITLE_ } from '@/Constants';
 
 export const metadata: Metadata = {

@@ -1,9 +1,22 @@
 'use client';
-import { Stack } from '@mui/material';
-import { useRouter } from 'next/navigation';
-import { AppButton } from '@/components';
+
+// ** React imports
+import React from 'react';
+
+// ** Hooks imports
 import { useAppStore } from '@/store';
 import { useEventLogout } from '@/hooks';
+
+// ** Mui imports
+import { useRouter } from 'next/navigation';
+
+// ** MUI imports
+import { Stack } from '@mui/material';
+
+// ** Components imports
+import { AppButton } from '@/components';
+
+// ** Utils imports
 import { sessionStorageSet } from '@/utils';
 
 /**

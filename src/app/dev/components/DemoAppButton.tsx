@@ -1,7 +1,15 @@
 'use client';
-import { useState } from 'react';
+
+// ** React imports
+import React,{ useState } from 'react';
+
+// ** Third-party imports
 import copyToClipboard from 'copy-to-clipboard';
+
+// ** MUI imports
 import { Card, CardContent, CardHeader, Snackbar } from '@mui/material';
+
+// ** Components imports
 import { AppButton } from '@/components';
 import { AppButtonProps } from '@/components/common/AppButton/AppButton';
 
@@ -29,8 +37,8 @@ const InternalAppButton = (props: AppButtonProps) => {
 
     const code = `<AppButton ${propsToPass} />`;
     copyToClipboard(code);
-    setSnackbarOpen(true); // Show snackbar
-    setTimeout(() => setSnackbarOpen(false), 3000); // Hide snackbar after small delay
+    setSnackbarOpen(true); // ** Show snackbar
+    setTimeout(() => setSnackbarOpen(false), 3000); // ** Hide snackbar after small delay
   };
 
   return (
