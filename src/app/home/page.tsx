@@ -6,10 +6,11 @@ import DemoAppButton from '../dev/components/DemoAppButton';
 import DemoAppIcon from '../dev/components/DemoAppIcon';
 import DemoAppIconButton from '../dev/components/DemoAppIconButton';
 import DemoAppImage from '../dev/components/DemoAppImage';
+import { _DESCRIPTION_, _TITLE_ } from '@/Constants';
 
 export const metadata: Metadata = {
-  title: 'Chat Application',
-  description: 'Chat Application Description...',
+  title: _TITLE_,
+  description: _DESCRIPTION_,
 };
 
 /**

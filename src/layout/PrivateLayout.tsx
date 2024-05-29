@@ -2,8 +2,9 @@ import { FunctionComponent, PropsWithChildren } from 'react';
 import { IS_DEBUG } from '@/config';
 import { LinkToPage } from '@/utils';
 import TopBarAndSideBarLayout from './TopBarAndSideBarLayout';
+import { _TITLE_ } from '@/Constants';
 
-const TITLE_PRIVATE = 'Chat Application'; // ** Title for pages after authentication
+const TITLE_PRIVATE = _TITLE_; // ** Title for pages after authentication
 
 /**
  * SideBar navigation items with links for Private Layout
